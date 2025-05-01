@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>選擇你的AI女友-AI GIRLFRIEND </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><a href="/"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="AI GIRLFRIEND Logo"></a></div>
+    <nav>
+      <div class="dropdown">
+        <a href="#" class="menu" id="dropdownMenuBtn"><span class="menu-icon">&#9776;</span> 活動列表</a>
+        <div class="dropdown-content">
+          <a href="/info" class="dropdown-item">個人資料</a>
+          <button class="dropdown-item">歷史紀錄</button>
+        </div>
+      </div>
+      <a href="/" class="logout">登出</a>
+    </nav>
+  </header>
+  <div class="home-main">
+    <div class="gf-list">
+      <div class="gf-card">
+        <img src="{{ url_for('static', filename='images/gf1.jpg') }}" alt="冷酷傲嬌">
+        <div class="gf-info">
+            <div class="gf-title cool">冷酷傲嬌</div>
+            <div class="gf-desc">外表冷冽，內心卻細心的每一動一靜。偶爾毒舌卻讓人上癮，傲嬌的反差魅力讓人無法抗拒。</div>
+          </div>
+        <form action="/result" method="POST">
+          <input type="hidden" name="personality" value="gf1">
+          <button type="submit" class="gf-select">選擇</button>
+        </form>
+      </div>
+      <div class="gf-card">
+        <img src="{{ url_for('static', filename='images/gf2.jpg') }}" alt="活潑可愛">
+        <div class="gf-info">
+          <div class="gf-title lively">活潑可愛</div>
+          <div class="gf-desc">像陽光一樣充滿活力，開朗外向，話題不斷，總能用甜美的笑容與有趣的互動讓你的心一整天。</div>
+        </div>
+        <form action="/result" method="POST">
+          <input type="hidden" name="personality" value="gf2">
+          <button type="submit" class="gf-select">選擇</button>
+        </form>
+      </div>
+      <div class="gf-card">
+        <img src="{{ url_for('static', filename='images/gf3.jpg') }}" alt="溫柔體貼">
+        <div class="gf-info">
+            <div class="gf-title warm">溫柔體貼</div>
+            <div class="gf-desc">如春風般溫暖，就是懂得你的心聲，給你最貼心的陪伴與關懷，讓你每天都感到安心與放鬆。</div>
+          </div>
+        <form action="/result" method="POST">
+          <input type="hidden" name="personality" value="gf3">
+          <button type="submit" class="gf-select">選擇</button>
+        </form>
+      </div>
+      <div class="gf-card">
+        <img src="{{ url_for('static', filename='images/gf4.png') }}" alt="成熟女神">
+        <div class="gf-info">
+          <div class="gf-title mature">成熟女神</div>
+          <div class="gf-desc">優雅、自信、聰慧，像是人生導師也像情人，懂得你的需求並給你最成熟溫柔的情感回應。</div>
+        </div>
+        <form action="/result" method="POST">
+          <input type="hidden" name="personality" value="gf4">
+          <button type="submit" class="gf-select">選擇</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 

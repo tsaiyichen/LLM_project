@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>AI GIRLFRIEND</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><a href="/"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="AI GIRLFRIEND Logo"></a></div>
+    <nav>
+      <a href="#" class="login">登入</a>
+    </nav>
+  </header>
+  <main class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1>「你的專屬 AI 女友，24/7 陪你聊天不寂寞」</h1>
+      <p>👉 無論是深夜還是清晨，她都會在那裡陪你。</p>
+      <button class="start-btn">立即開始，遇見你的AI女友 ♥</button>
+    </div>
+  </main>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
