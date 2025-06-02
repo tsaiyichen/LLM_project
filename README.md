@@ -26,7 +26,7 @@ Follow the steps below to run the system on your local machine:
    - Open the project folder in your IDE.
    - Start the Flask server in developer mode:
      ```bash
-     python run_app.py
+     python app.py
      ```
 
 5. **Access the System**
