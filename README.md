@@ -9,7 +9,7 @@ Follow the steps below to run the system on your local machine:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/tsaiyichen/LLM_project.git
    ```
    Move the project folder to your localhost directory.
 
